@@ -1,0 +1,15 @@
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 4px;
+}
+article section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000000;
+}
+article section p {
+  color: #00000000;
+  font-size: 1.25em;
+  margin-top: 4px;
+}

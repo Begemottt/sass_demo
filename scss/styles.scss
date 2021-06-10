@@ -1,0 +1,35 @@
+@import "size";
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    @include size(sm){
+        width: 600px;
+        border: 2px 2px dotted green;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #000000;
+        p{
+            color: #00000000;
+            font-size: 1.25em;
+            margin-top: 4px;
+        }
+    }
+}
+a{
+    text-decoration: none;
+    color: purple;
+    &:hover{
+        color: teal;
+        text-decoration: underline;
+        p{
+            font-size: 2em;
+        }
+    }
+    &.fancy{
+        font-style: italic;
+    }
+}
